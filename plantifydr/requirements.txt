@@ -1,0 +1,5 @@
+Flask
+fastai
+uwsgi
+fastcore
+fastprogress

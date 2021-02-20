@@ -1,0 +1,9 @@
+PlantifyDr.pem
+PlantDiseasesDataset.zip
+PlantDiseasesDataset/**
+plantifydr/models/**
+plantifydr/__pycache__/**
+plantifydr/.vscode/**
+TransferLearning/**
+notebooks/experiments/.ipynb_checkpoints/**
+notebooks/plants/.ipynb_checkpoints/**

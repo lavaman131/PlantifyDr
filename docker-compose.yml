@@ -1,0 +1,8 @@
+version: "3.9"
+services: 
+  plantifydr:  
+    build: ./plantifydr
+    ports:
+      - "5000:5000"
+    volumes:
+      - "/home/alilavaee/Desktop/plantifydr/plantifydr:/app"
