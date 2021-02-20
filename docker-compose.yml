@@ -5,4 +5,4 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - "/home/alilavaee/Desktop/Plantifydr/plantifydr:/app"
+      - "/home/alilavaee/Desktop/PlantifyDr/plantifydr:/app"
