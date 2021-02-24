@@ -8,7 +8,11 @@
 
 import UIKit
 
-class PlantMenuController: UIViewController {
+var Plant : String?
+class PlantMenuController: UIViewController,UITableViewDataSource, UITableViewDelegate {
+    struct MyVariables {
+        static var yourVariable = "someString"
+    }
     
     var plants = ["Apple","Bell pepper","Cherry","Citrus","Corn","Grape","Peach","Potato","Strawberry","Tomato"]
     
@@ -24,7 +28,6 @@ class PlantMenuController: UIViewController {
     
     // make var that transfers to second screen
     
-    //
     override func viewDidLoad() {
         super.viewDidLoad()
         plantTableView.delegate = self
@@ -35,11 +38,6 @@ class PlantMenuController: UIViewController {
         plantTableView.showsVerticalScrollIndicator = true
         
     }
-
-        
-}
-
-extension PlantMenuController: UITableViewDataSource, UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 100
@@ -66,6 +64,10 @@ extension PlantMenuController: UITableViewDataSource, UITableViewDelegate {
     
         @objc func viewdetail(sender: UIButton)
         {
+            let index = sender.tag
+            let plant_type = plants[index]
+            Plant = plant_type
+            
             let vc = storyboard?.instantiateViewController(withIdentifier: "pred_vc") as! PredictionViewController
             vc.modalPresentationStyle = .fullScreen
             present(vc, animated: true)
@@ -73,7 +75,10 @@ extension PlantMenuController: UITableViewDataSource, UITableViewDelegate {
         }
     
     
+
 }
+
+    
 
 
     

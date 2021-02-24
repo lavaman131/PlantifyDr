@@ -67,7 +67,6 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
         
         
         var semaphore = DispatchSemaphore (value: 0)
-        let plant_type = "Corn"
 
         let parameters = [
           [
@@ -77,7 +76,7 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
           ],
           [
             "key": "plant_type",
-            "value": plant_type,
+            "value": Plant,
             "type": "text"
           ]] as [[String : Any]]
 
