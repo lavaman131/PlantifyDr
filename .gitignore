@@ -7,3 +7,4 @@ plantifydr/.vscode/**
 TransferLearning/**
 notebooks/experiments/.ipynb_checkpoints/**
 notebooks/plants/.ipynb_checkpoints/**
+.DS_Store
