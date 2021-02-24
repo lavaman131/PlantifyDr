@@ -55,6 +55,7 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
     
     
     
+    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
 
@@ -63,7 +64,8 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
         
         let imageData = image.jpegData(compressionQuality: 1)
         let imageBase64String = imageData!.base64EncodedString()
-    
+        
+        
         var semaphore = DispatchSemaphore (value: 0)
         let plant_type = "Corn"
 
@@ -96,8 +98,6 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
               body += "\r\n\r\n\(paramValue)\r\n"
             } else {
               let paramSrc = "test.jpg"
-//              let fileData = try! NSData(contentsOfFile:paramSrc, options:[]) as Data
-//                let fileContent = String(data: fileData, encoding: .utf8)!
               body += "; filename=\(paramSrc)\"\r\n"
                 + "Content-Type: \"text-plain\"\r\n\r\n\(imageBase64String)\r\n"
             }
@@ -118,6 +118,12 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
             if let data = data {
                 do {
                     let res = try JSONDecoder().decode(Response.self, from: data)
+                    DispatchQueue.main.async {
+                        self.resultsLabel.text = "\(res.diagnosis)"
+                        self.showResults()
+                    }
+
+                        
                 } catch let error {
                     print(String(describing: error))
                     semaphore.signal()
@@ -133,11 +139,12 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
 
     }
     
-    struct Response: Codable { // or Decodable
-      let diagnosis: String
+        
+    
+    struct Response: Codable {
+        var diagnosis: String
     }
     
-   
     func presentPicker(with sourceType: UIImagePickerController.SourceType) {
         let picker = UIImagePickerController()
         picker.delegate = self
@@ -159,6 +166,18 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
         self.resultsView.alpha = 1
         learnmorebtn.isHidden = true
     }
+    
+    func showResults() {
+        
+        if (self.resultsLabel.text!.contains("Healthy")) {
+            self.minResultsView()
+        }
+        
+        else {
+            self.showResultsView()
+        }
+    }
+    
     
     @IBAction func buttonTapped(_ sender: Any) {
         let query = self.resultsLabel.text!
