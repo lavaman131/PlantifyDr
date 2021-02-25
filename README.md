@@ -12,14 +12,6 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 - [iOS App Code](PlantifyDr_iOS)
 - [Deployment Code](plantifydr)
 
-## Getting Started
-
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
 ## Built With
 
 - [fastai](https://docs.fast.ai/) - A deep learning library written in Python based off of PyTorch
