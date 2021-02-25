@@ -4,8 +4,6 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 
 ![](images/PlantifyDr-feature-graphic.png)
 
----
-
 ## Table of Contents
 
 - [Machine Learning Notebooks](notebooks)
@@ -13,8 +11,6 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
   - [Experiments with transfer learning](notebooks/experiments)
 - [iOS App Code](PlantifyDr_iOS)
 - [Deployment Code](plantifydr)
-
----
 
 ## Built With
 
@@ -25,27 +21,19 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 - [AWS](https://aws.amazon.com/) - For hosting ML models
 - [Swift](https://developer.apple.com/swift/) - For creating iOS app
 
----
-
 ## Get my app
 
 - [iOS](https://apps.apple.com/us/app/plantifydr/id1530756725)
 - [Android](https://play.google.com/store/apps/details?id=com.onrender.plantify) - working on update
 - [Website](https://plantify.onrender.com/) - working on update
 
----
-
 ## Authors
 
 - **Alex Lavaee**
 
----
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
-
----
 
 ## Acknowledgments
 
