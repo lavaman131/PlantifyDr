@@ -29,6 +29,12 @@ Add additional notes about how to deploy this on a live system
 - [AWS](https://aws.amazon.com/) - For hosting ML models
 - [Swift](https://developer.apple.com/swift/) - For creating iOS app
 
+## Get my app
+
+- [iOS](https://apps.apple.com/us/app/plantifydr/id1530756725)
+- [Android](https://play.google.com/store/apps/details?id=com.onrender.plantify) - working on update
+- [Website](https://plantify.onrender.com/) - working on update
+
 ## Authors
 
 - **Alex Lavaee**
