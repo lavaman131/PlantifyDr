@@ -1,4 +1,4 @@
-# PlantifyDr
+# PlantifyDr 🌿
 
 A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagnose crop diseases through image classification of plant leaves.
 
