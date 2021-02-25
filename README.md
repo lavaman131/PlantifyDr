@@ -2,9 +2,13 @@
 
 A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagnose crop diseases through image classification of plant leaves.
 
+![](images/PlantifyDr-feature-graphic.png)
+
 ## Table of Contents
 
 - [Machine Learning Notebooks](notebooks)
+  - [Plant models](notebooks/plants)
+  - [Experiments with transfer learning](notebooks/experiments)
 - [iOS App Code](PlantifyDr_iOS)
 - [Deployment Code](plantifydr)
 

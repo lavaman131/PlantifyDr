@@ -20,6 +20,10 @@
 - https://unsplash.com/photos/gkANpt2K2Hk
 - https://unsplash.com/photos/1UTexFK5FTE
 
+## Code
+
+- https://towardsdatascience.com/plant-disease-detection-web-application-using-fastai-b0c389b82371
+
 ## Data
 
 - https://data.mendeley.com/datasets/tywbtsjrjv/1
