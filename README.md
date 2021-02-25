@@ -6,7 +6,7 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 
 ## Table of Contents
 
-- [Machine Learning Notebooks](notebooks)
+- [Machine Learning Notebooks](notebooks){: .gitlab-orange}
   - [Plant models](notebooks/plants)
   - [Experiments with transfer learning](notebooks/experiments)
 - [iOS App Code](PlantifyDr_iOS)
