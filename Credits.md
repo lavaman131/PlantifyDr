@@ -5,7 +5,7 @@
 - https://unsplash.com/photos/hX_hf2lPpUU
 - https://unsplash.com/photos/WS5yjFjycNY
 - https://unsplash.com/photos/hv0NXDd_Jww
-- https://www.flaticon.com/free-icon keyboard-left-arrow-button_60775
+- https://www.flaticon.com/free-iconkeyboard-left-arrow-button_60775
 - https://www.flaticon.com/free-icon/leaf_861054?term=leaf&page=1&position=10
 - https://unsplash.com/photos/O7_Pp4fjDVY
 - https://www.flaticon.com/free-icon/green-tea_1087420
