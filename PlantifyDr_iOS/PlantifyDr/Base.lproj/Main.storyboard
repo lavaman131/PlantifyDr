@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -18,13 +17,15 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose a plant from the list." borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfb-hH-cug">
-                                <rect key="frame" x="0.0" y="5" width="375" height="34"/>
-                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <rect key="frame" x="0.0" y="5" width="375" height="34.5"/>
+                                <color key="backgroundColor" red="0.30919879674911499" green="0.25922289490699768" blue="0.91678303480148315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wDS-M8-NRM">
-                                <rect key="frame" x="0.0" y="39" width="375" height="628"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <rect key="frame" x="0.0" y="39.5" width="375" height="627.5"/>
+                                <color key="backgroundColor" red="0.30919879674911499" green="0.25922289490699768" blue="0.91678303480148315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="plantCell" rowHeight="100" id="t5m-oV-gLh" customClass="PlantTVC" customModule="PlantifyDr" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
@@ -45,7 +46,7 @@
                                                         </imageView>
                                                         <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Plant" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CgX-JX-c5C">
                                                             <rect key="frame" x="8" y="8" width="327" height="62"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                            <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="23"/>
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
@@ -53,7 +54,7 @@
                                                             <rect key="frame" x="0.0" y="0.0" width="343" height="78"/>
                                                         </button>
                                                     </subviews>
-                                                    <color key="backgroundColor" red="0.64634950290952775" green="1" blue="0.49234020363338948" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                    <color key="backgroundColor" red="0.88240653276443481" green="0.75076291385364691" blue="0.75219190383695211" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                     <constraints>
                                                         <constraint firstItem="CgX-JX-c5C" firstAttribute="leading" secondItem="Zx6-L9-59O" secondAttribute="leadingMargin" id="111-O2-y7U"/>
                                                         <constraint firstItem="qKd-WL-iXJ" firstAttribute="centerY" secondItem="Zx6-L9-59O" secondAttribute="centerY" id="Bjj-Ft-GZ5"/>
@@ -75,6 +76,7 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="Zx6-L9-59O" secondAttribute="trailing" id="wWp-LW-lGH"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" red="0.30919879674911499" green="0.25922289490699768" blue="0.91678303480148315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
                                             <outlet property="plantButton" destination="oLX-RM-lR8" id="gIR-5K-bju"/>
                                             <outlet property="plantImgView" destination="qKd-WL-iXJ" id="JRE-BX-3ol"/>
@@ -86,7 +88,7 @@
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dcE-MA-Qrk"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.30919879674911499" green="0.25922289490699768" blue="0.91678303480148315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="cfb-hH-cug" firstAttribute="leading" secondItem="dcE-MA-Qrk" secondAttribute="leading" id="5qG-o8-1Ib"/>
                             <constraint firstItem="dcE-MA-Qrk" firstAttribute="trailing" secondItem="cfb-hH-cug" secondAttribute="trailing" id="Dbu-9L-jpl"/>
@@ -146,7 +148,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.22352941176470587" green="0.0" blue="0.92156862745098034" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.30985301733016968" green="0.25741788744926453" blue="0.91575980186462402" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="B44-6a-7d4" secondAttribute="trailing" constant="8" id="4Om-RD-EhF"/>
                                     <constraint firstItem="H1u-uK-cfk" firstAttribute="top" secondItem="B44-6a-7d4" secondAttribute="top" id="eF5-el-pAl"/>
@@ -156,10 +158,11 @@
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cjs-8D-ksX">
                                 <rect key="frame" x="34" y="483" width="307" height="59"/>
-                                <color key="backgroundColor" red="0.0" green="0.3921568627" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.91982024908065796" green="0.3800346851348877" blue="0.24025797843933105" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="59" id="WSo-7T-vLF"/>
                                 </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <state key="normal" title="Learn more">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -172,7 +175,8 @@
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Model results " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="APb-kq-X1W">
                                         <rect key="frame" x="8" y="8" width="319" height="147"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <color key="tintColor" red="0.30919879674911499" green="0.25922289490699768" blue="0.91678303480148315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -188,6 +192,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf2-HH-tt4">
                                 <rect key="frame" x="20" y="8" width="124" height="52"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
@@ -239,8 +244,5 @@
         <image name="MainScreen" width="541" height="812"/>
         <image name="camera" width="102.5" height="102.5"/>
         <image name="photos" width="102.5" height="102.5"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

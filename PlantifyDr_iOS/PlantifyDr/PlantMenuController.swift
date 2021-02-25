@@ -10,15 +10,16 @@ import UIKit
 
 var Plant : String?
 class PlantMenuController: UIViewController,UITableViewDataSource, UITableViewDelegate {
-    struct MyVariables {
-        static var yourVariable = "someString"
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
     }
     
-    var plants = ["Apple","Bell pepper","Cherry","Citrus","Corn","Grape","Peach","Potato","Strawberry","Tomato"]
+    var plants = ["Apple","Bell pepper","Tomato","Citrus","Corn","Grape","Peach","Potato","Strawberry","Cherry"]
     
     let myImages = [UIImage(named:"apple")!,
             UIImage(named:"bell_pepper")!,
-            UIImage(named:"cherry")!, UIImage(named:"citrus")!, UIImage(named:"corn")!,UIImage(named:"grape")!,UIImage(named:"peach")!,UIImage(named:"potato")!,UIImage(named:"strawberry")!,UIImage(named:"tomato")!]
+            UIImage(named:"tomato")!, UIImage(named:"citrus")!, UIImage(named:"corn")!,UIImage(named:"grape")!,UIImage(named:"peach")!,UIImage(named:"potato")!,UIImage(named:"strawberry")!,UIImage(named:"cherry")!]
     
     @IBOutlet weak var plantTableView: UITableView!
     
