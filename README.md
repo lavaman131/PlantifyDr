@@ -1,4 +1,4 @@
-# PlantifyDr:
+# PlantifyDr
 
 A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagnose crop diseases through image classification of plant leaves.
 
@@ -35,4 +35,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-See the [Credits.txt](Credits.txt) file for details
+See the [Credits.md](Credits.md) file for details
