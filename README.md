@@ -14,9 +14,7 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 
 ## Built With
 
-<iframe src="images/Resnet50.onnx.svg" width="400px" height="400px"></iframe>
-
-<object data="images/Resnet50.onnx.svg" width="300" height="300"> </object>
+<object data="images/Resnet50.onnx.svg" type="image/svg+xml"></object>
 
 - [fastai](https://docs.fast.ai/) - A deep learning library written in Python based off of PyTorch
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Used as web framework for deployment
