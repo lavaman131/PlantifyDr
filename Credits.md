@@ -19,6 +19,13 @@
 - https://ravallirepublic.com/news/local/article_071d31c9-8f0a-5fda-9f7c-b4678182f3e6.html
 - https://unsplash.com/photos/gkANpt2K2Hk
 - https://unsplash.com/photos/1UTexFK5FTE
+- https://www.unicef-irc.org/article/1626-first-global-estimates-of-food-insecurity-among-households-with-children.html
+- http://www.fao.org/news/story/en/item/1187738/icode/#:~:text=FAO%20estimates%20that%20annually%20between,insects%20around%20US%2470%20billion.
+- https://data-flair.training/blogs/machine-learning-infographic/
+- https://getbuzz.io/c/fastai-courses
+- https://aimconsulting.com/insights/modular-programming-android-using-swift/
+- https://hexus.net/tech/news/graphics/122288-asus-geforce-rtx-2070-graphics-card-lineup-exposed/
+- https://logos-world.net/ubuntu-logo/
 
 ## Code
 
