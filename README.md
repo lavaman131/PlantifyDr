@@ -9,11 +9,14 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 - [Machine Learning Notebooks](notebooks)
   - [Plant models](notebooks/plants)
   - [Experiments with transfer learning](notebooks/experiments)
-  - [Diagram of Model](images/Resnet50.onnx.svg)
 - [iOS App Code](PlantifyDr_iOS)
 - [Deployment Code](plantifydr)
 
 ## Built With
+
+<iframe src="images/Resnet50.onnx.svg" width="400px" height="400px"></iframe>
+
+<object data="images/Resnet50.onnx.svg" width="300" height="300"> </object>
 
 - [fastai](https://docs.fast.ai/) - A deep learning library written in Python based off of PyTorch
 - [Flask](https://flask.palletsprojects.com/en/1.1.x/) - Used as web framework for deployment
