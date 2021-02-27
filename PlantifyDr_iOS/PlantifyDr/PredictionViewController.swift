@@ -30,7 +30,6 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
     @IBOutlet weak var backbtn: UIButton!
     
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -42,6 +41,7 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
         self.backbtn.layer.cornerRadius = 20
         cameraButton.isEnabled = UIImagePickerController.isSourceTypeAvailable(.camera)
         resultsLabel.text = "Use or take an image of a single leaf of a plant."
+        
     }
 
     // MARK: IBActions...................
@@ -54,15 +54,19 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
     }
     
     
-    
-    
     func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
         picker.dismiss(animated: true)
 
         let image = info[.originalImage] as! UIImage
+    
         imageView.image = image
         
-        let imageData = image.jpegData(compressionQuality: 1)
+        let renderer = UIGraphicsImageRenderer(size: CGSize(width: 224, height:224))
+        let resized_image = renderer.image { (context) in
+            image.draw(in: CGRect(origin: .zero, size: CGSize(width: 224, height:224)))
+        }
+        
+        let imageData = resized_image.jpegData(compressionQuality: 1)
         let imageBase64String = imageData!.base64EncodedString()
         
         
@@ -138,8 +142,6 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
 
     }
     
-        
-    
     struct Response: Codable {
         var diagnosis: String
     }
@@ -149,8 +151,10 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
         picker.delegate = self
         picker.sourceType = sourceType
         present(picker, animated: true)
+    
         hideResultsView()
     }
+
 
     func hideResultsView() {
         self.resultsView.alpha = 0
@@ -177,7 +181,6 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
         }
     }
     
-    
     @IBAction func buttonTapped(_ sender: Any) {
         let query = self.resultsLabel.text!
         let replaced = query.replacingOccurrences(of: "\\s", with: "+", options: .regularExpression)
@@ -186,15 +189,20 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
         
     }
     
+    
     @IBAction func backbtnTapped(_ sender: Any) {
         viewDidLoad()
         backbtn.isHidden = true
         learnmorebtn.isHidden = true
+        
         let vc = storyboard?.instantiateViewController(identifier:"plant_menu_vc") as! PlantMenuController
         vc.modalPresentationStyle = .fullScreen
-        present(vc,animated:true)
+        self.present(vc, animated: true)
+
     }
+
     
 }
+
 
 

@@ -16,15 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Choose a plant from the list." borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cfb-hH-cug">
-                                <rect key="frame" x="0.0" y="5" width="375" height="34.5"/>
-                                <color key="backgroundColor" red="0.30919879674911499" green="0.25922289490699768" blue="0.91678303480148315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wDS-M8-NRM">
-                                <rect key="frame" x="0.0" y="39.5" width="375" height="627.5"/>
+                                <rect key="frame" x="0.0" y="40" width="375" height="627"/>
                                 <color key="backgroundColor" red="0.30919879674911499" green="0.25922289490699768" blue="0.91678303480148315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="plantCell" rowHeight="100" id="t5m-oV-gLh" customClass="PlantTVC" customModule="PlantifyDr" customModuleProvider="target">
@@ -86,17 +79,30 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Choose a plant from the list" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xuK-z6-VBG">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="fAb-Jb-ezk"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="dcE-MA-Qrk"/>
                         <color key="backgroundColor" red="0.30919879674911499" green="0.25922289490699768" blue="0.91678303480148315" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="cfb-hH-cug" firstAttribute="leading" secondItem="dcE-MA-Qrk" secondAttribute="leading" id="5qG-o8-1Ib"/>
-                            <constraint firstItem="dcE-MA-Qrk" firstAttribute="trailing" secondItem="cfb-hH-cug" secondAttribute="trailing" id="Dbu-9L-jpl"/>
+                            <constraint firstItem="xuK-z6-VBG" firstAttribute="leading" secondItem="dcE-MA-Qrk" secondAttribute="leading" id="10Z-hG-JJm"/>
                             <constraint firstItem="dcE-MA-Qrk" firstAttribute="bottom" secondItem="wDS-M8-NRM" secondAttribute="bottom" id="Hf7-xK-BN1"/>
-                            <constraint firstItem="wDS-M8-NRM" firstAttribute="top" secondItem="cfb-hH-cug" secondAttribute="bottom" id="KLt-nn-okh"/>
-                            <constraint firstItem="cfb-hH-cug" firstAttribute="top" secondItem="dcE-MA-Qrk" secondAttribute="top" constant="5" id="SHN-la-282"/>
+                            <constraint firstItem="wDS-M8-NRM" firstAttribute="top" secondItem="xuK-z6-VBG" secondAttribute="bottom" id="M3O-EG-4DO"/>
+                            <constraint firstItem="xuK-z6-VBG" firstAttribute="trailing" secondItem="dcE-MA-Qrk" secondAttribute="trailing" id="PKP-BX-7cn"/>
+                            <constraint firstItem="xuK-z6-VBG" firstAttribute="leading" secondItem="dcE-MA-Qrk" secondAttribute="leading" id="YJF-WR-AQE"/>
                             <constraint firstItem="wDS-M8-NRM" firstAttribute="leading" secondItem="dcE-MA-Qrk" secondAttribute="leading" id="dLp-3d-7Gd"/>
                             <constraint firstItem="wDS-M8-NRM" firstAttribute="trailing" secondItem="dcE-MA-Qrk" secondAttribute="trailing" id="dzW-Bd-FiA"/>
+                            <constraint firstItem="wDS-M8-NRM" firstAttribute="top" secondItem="xuK-z6-VBG" secondAttribute="bottom" id="m7B-Mk-ZGA"/>
+                            <constraint firstItem="xuK-z6-VBG" firstAttribute="top" secondItem="dcE-MA-Qrk" secondAttribute="top" id="n1a-60-nET"/>
+                            <constraint firstItem="xuK-z6-VBG" firstAttribute="trailing" secondItem="dcE-MA-Qrk" secondAttribute="trailing" id="osJ-Ea-PAJ"/>
+                            <constraint firstItem="xuK-z6-VBG" firstAttribute="top" secondItem="dcE-MA-Qrk" secondAttribute="top" id="tA0-7a-Mh8"/>
                         </constraints>
                     </view>
                     <connections>
@@ -192,7 +198,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uf2-HH-tt4">
                                 <rect key="frame" x="20" y="8" width="124" height="52"/>
                                 <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="17"/>
+                                <fontDescription key="fontDescription" name="Rockwell-Regular" family="Rockwell" pointSize="18"/>
                                 <state key="normal" title="Back">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>

@@ -5,8 +5,8 @@
 //  Created by Ali Lavaee on 2/21/21.
 //  Copyright © 2021 Swift Creator. All rights reserved.
 //
-
 import UIKit
+
 
 var Plant : String?
 class PlantMenuController: UIViewController,UITableViewDataSource, UITableViewDelegate {
@@ -69,12 +69,13 @@ class PlantMenuController: UIViewController,UITableViewDataSource, UITableViewDe
             let plant_type = plants[index]
             Plant = plant_type
             
-            let vc = storyboard?.instantiateViewController(withIdentifier: "pred_vc") as! PredictionViewController
+            let vc = storyboard?.instantiateViewController(identifier:"pred_vc") as! PredictionViewController
             vc.modalPresentationStyle = .fullScreen
-            present(vc, animated: true)
+            self.present(vc, animated: true)
+            
     
         }
-    
+
     
 
 }
