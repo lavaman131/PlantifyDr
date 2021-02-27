@@ -1,6 +1,25 @@
 # Credits
 
-## Image Assets
+## Data
+
+- https://data.mendeley.com/datasets/tywbtsjrjv/1
+- https://www.kaggle.com/vipoooool/new-plant-diseases-dataset
+- https://github.com/pratikkayal/PlantDoc-Dataset
+- https://data.mendeley.com/datasets/3f83gxmv57/2
+
+## Research Journals
+
+- [ResNet](https://arxiv.org/abs/1512.03385)
+- [XResNet](https://arxiv.org/abs/1812.01187)
+- [Cosine Annealing LR](https://arxiv.org/abs/1708.07120)
+
+## Research Websites
+
+- https://towardsdatascience.com/plant-disease-detection-web-application-using-fastai-b0c389b82371
+
+- https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33#:~:text=ResNet%2C%20short%20for%20Residual%20Networks,of%20ImageNet%20challenge%20in%202015.
+
+## Image Assets for iOS app
 
 - https://unsplash.com/photos/hX_hf2lPpUU
 - https://unsplash.com/photos/WS5yjFjycNY
@@ -26,14 +45,3 @@
 - https://aimconsulting.com/insights/modular-programming-android-using-swift/
 - https://hexus.net/tech/news/graphics/122288-asus-geforce-rtx-2070-graphics-card-lineup-exposed/
 - https://logos-world.net/ubuntu-logo/
-
-## Code
-
-- https://towardsdatascience.com/plant-disease-detection-web-application-using-fastai-b0c389b82371
-
-## Data
-
-- https://data.mendeley.com/datasets/tywbtsjrjv/1
-- https://www.kaggle.com/vipoooool/new-plant-diseases-dataset
-- https://github.com/pratikkayal/PlantDoc-Dataset
-- https://data.mendeley.com/datasets/3f83gxmv57/2

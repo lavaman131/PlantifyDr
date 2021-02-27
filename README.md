@@ -22,19 +22,23 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 - [WSGI](https://wsgi.readthedocs.io/en/latest/what.html) - Web Server Gateway Interface to communicate with web application
 - [AWS](https://aws.amazon.com/) - For hosting ML models
 - [Swift](https://developer.apple.com/swift/) - For creating iOS app
+
   ![](images/Resources.png)
 
-### Flowchart
+## Project Plan
 
 ![](images/Flowchart.jpg)
 
 ## Model architecture
 
-- The power of convolutional neural networks (CNNs), specifically, ResNet-50 allows computer to detect patterns in the pixels of images that humans cannot see.
+- The power of convolutional neural networks (CNNs), specifically, `ResNet-50` allows computer to detect patterns in the pixels of images that humans cannot see.
 - As opposed to other ResNet variants, ResNet-50 provides compromise of additional model layers (50) while keeping model storage relatively low (~100mb).
+
+  ![](images/ResNet50.png)
+
 - Finally, skip connections helps mitigate vanishing gradient and model performance will perform at least as good as previous layer.
 
-![](images/ResNet50.png)
+  ![](images/SkipConnection.png)
 
 ## Deep Learning techniques used
 
@@ -42,11 +46,11 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 
 2. **Fine tuning model** with `freeze` for `freeze_epochs` (transfer learning) then with `unfreeze` from epochs using `discriminative LR` (lower LR for earlier layers and greater LR for later layers)
 
-![](images/Flowchart.jpg)
+![](images/CosineAnnealing.png)
 
 ## Results
 
-My final models each achieved a validation accuracy of 99.0%.
+My final models each achieved a validation `accuracy of >= 99.2%`.
 
 #### Here are my results for tomatos:
 
@@ -58,11 +62,30 @@ My final models each achieved a validation accuracy of 99.0%.
 
 ![](images/Tomato_Results.png)
 
+#### Statistical Analysis:
+
+- The `Matthews correlation coefficient (MCC)` is in essence a correlation coefficient value between -1 and +1 commonly used in machine learning that considers class imbalances. A coefficient of +1 represents a perfect prediction, 0 an average random prediction and -1 an inverse prediction. It takes into consideration true and false positives and negatives. My model achieved a `MCC of 0.991`.
+- The `F1 score` can be interpreted as a weighted average of the precision and recall, where an F1 score reaches its best value at 1 and worst score at 0. This is also helpful in considering class imbalances. My model achieved an `F1 score of 0.992`.
+- As shown in the train loss and valid loss columns and the Epochs vs Training and Validation graph my model has a `good fit` after `12 epochs` of training
+  - A `good fit` is identified by a training and validation loss that decreases to a point of stability with a minimal gap between the two final loss values.
+- Therefore, based on the previous statistics it can be inferred that the `validation accuracy` from my results is reliable to diagnose and treat plant diseases.
+
+## Points of Improvement:
+
+- In the future, I would like to add more plant types and diseases to my dataset.
+- Additionally, I want to add more features like plant nutritional deficiency recognition which can help provide insight into pesticide free and biological treatment of plants.
+- Something else I might have done differently was build my app in React Native or Flutter as it would have allowed me to bundle my iOS and Android app together which would be easier to do as the only developer.
+- Finally, I would like to implement and experiment with more state-of-the art models including XResNet and its variants for transfer learning on different datasets.
+
 ## Get my app
 
-- [iOS](https://apps.apple.com/us/app/plantifydr/id1530756725)
+- [iOS](https://apps.apple.com/us/app/plantifydr/id1530756725) - new version released
 - [Android](https://play.google.com/store/apps/details?id=com.onrender.plantify) - working on update
 - [Website](https://plantify.onrender.com/) - working on update
+
+## Final Words
+
+I hope my experiences building this app can shed some light into someone who is looking to get started on a similar ML project.
 
 ## Authors
 
