@@ -22,11 +22,19 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 - [WSGI](https://wsgi.readthedocs.io/en/latest/what.html) - Web Server Gateway Interface to communicate with web application
 - [AWS](https://aws.amazon.com/) - For hosting ML models
 - [Swift](https://developer.apple.com/swift/) - For creating iOS app
-  <!-- ![](images/Resources.png) -->
+  ![](images/Resources.png)
 
 ### Flowchart
 
 ![](images/Flowchart.jpg)
+
+## Model architecture
+
+- The power of convolutional neural networks (CNNs), specifically, ResNet-50 allows computer to detect patterns in the pixels of images that humans cannot see.
+- As opposed to other ResNet variants, ResNet-50 provides compromise of additional model layers (50) while keeping model storage relatively low (~100mb).
+- Finally, skip connections helps mitigate vanishing gradient and model performance will perform at least as good as previous layer.
+
+![](images/ResNet50.png)
 
 ## Deep Learning techniques used
 
@@ -40,7 +48,15 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 
 My final models each achieved a validation accuracy of 99.0%.
 
+#### Here are my results for tomatos:
+
 ![](images/Tomato_Table.png)
+
+![](images/Tomato_Graph.png)
+
+![](images/Tomato_Confusion_Matrix.png)
+
+![](images/Tomato_Results.png)
 
 ## Get my app
 
