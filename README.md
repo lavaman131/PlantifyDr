@@ -25,10 +25,10 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 
   <img src="images/Resources.png">
   <p></p>
-  <img src="images/Docker.png" width="300">
-  <img src="images/Docker_Compose.jpg" width="300">
-  <img src="images/WSGI.png" width="300">
-  <img src="images/AWS.png" width="300">
+  <img src="images/Docker.png" width="400">
+  <img src="images/Docker_Compose.jpg" width="400">
+  <img src="images/WSGI.png" width="400">
+  <img src="images/AWS.png" width="400">
 
 ## Project Plan
 
@@ -59,10 +59,10 @@ My final models each achieved a validation `accuracy of >= 99.2%`.
 
 #### Here are my results for tomatos:
 
-<img src="images/Tomato_Table.png" width="500">
-<img src="images/Tomato_Graph.png" width="500">
-<img src="images/Tomato_Confusion_Matrix.png" width="500">
-<img src="images/Tomato_Results.png" width="500">
+<img src="images/Tomato_Table.png" width="600">
+<img src="images/Tomato_Graph.png" width="600">
+<img src="images/Tomato_Confusion_Matrix.png" width="600">
+<img src="images/Tomato_Results.png" width="600">
 
 #### Statistical Analysis:
 
