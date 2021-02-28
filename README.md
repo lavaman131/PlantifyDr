@@ -2,8 +2,8 @@
 
 A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagnose crop diseases through image classification of plant leaves.
 
-![](images/PlantifyDr-feature-graphic.png)
-![](images/iOSImage.png)
+<img src="images/PlantifyDr-feature-graphic.png">
+<img src="images/iOSImage.png">
 
 ## Table of Contents
 
@@ -23,26 +23,27 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 - [AWS](https://aws.amazon.com/) - For hosting ML models
 - [Swift](https://developer.apple.com/swift/) - For creating iOS app
 
-  ![](images/Resources.png)
-  ![](images/Docker.png)
-  ![](images/Docker_Compose.jpg)
-  ![](images/WSGI.png)
-  ![](images/AWS.png)
+  <img src="images/Resources.png">
+  <p></p>
+  <img src="images/Docker.png" width="300">
+  <img src="images/Docker_Compose.jpg" width="300">
+  <img src="images/WSGI.png" width="300">
+  <img src="images/AWS.png" width="300">
 
 ## Project Plan
 
-![](images/Flowchart.jpg)
+<img src="images/Flowchart.jpg" width="750">
 
 ## Model architecture
 
 - The power of convolutional neural networks (CNNs), specifically, `ResNet-50` allows computer to detect patterns in the pixels of images that humans cannot see.
 - As opposed to other ResNet variants, ResNet-50 provides compromise of additional model layers (50) while keeping model storage relatively low (~100mb).
 
-  ![](images/ResNet50.png)
+  <img src="images/ResNet50.png" width="750">
 
 - Finally, skip connections helps mitigate vanishing gradient and model performance will perform at least as good as previous layer.
 
-  ![](images/SkipConnection.png)
+  <img src="images/SkipConnection.png" width="750>
 
 ## Deep Learning techniques used
 
@@ -50,7 +51,7 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 
 2. **Fine tuning model** with `freeze` for `freeze_epochs` (transfer learning) then with `unfreeze` from epochs using `discriminative LR` (lower LR for earlier layers and greater LR for later layers)
 
-![](images/CosineAnnealing.png)
+<img src="images/CosineAnnealing.png" width="500">
 
 ## Results
 
@@ -58,13 +59,10 @@ My final models each achieved a validation `accuracy of >= 99.2%`.
 
 #### Here are my results for tomatos:
 
-![](images/Tomato_Table.png)
-
-![](images/Tomato_Graph.png)
-
-![](images/Tomato_Confusion_Matrix.png)
-
-![](images/Tomato_Results.png)
+<img src="images/Tomato_Table.png" width="500">
+<img src="images/Tomato_Graph.png" width="500">
+<img src="images/Tomato_Confusion_Matrix.png" width="500">
+<img src="images/Tomato_Results.png" width="500">
 
 #### Statistical Analysis:
 
