@@ -24,6 +24,10 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 - [Swift](https://developer.apple.com/swift/) - For creating iOS app
 
   ![](images/Resources.png)
+  ![](images/Docker.png)
+  ![](images/Docker_Compose.jpg)
+  ![](images/WSGI.png)
+  ![](images/AWS.png)
 
 ## Project Plan
 

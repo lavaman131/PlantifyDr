@@ -49,3 +49,4 @@
 - https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Ftechtofreedom%2Fbackend-architecture-of-a-python-web-application-7af256ee004c&psig=AOvVaw0OymzRnJvGWbwce3AQzOYO&ust=1614554673469000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOit9qqdi-8CFQAAAAAdAAAAABAD
 - https://medium.com/techtofreedom/backend-architecture-of-a-python-web-application-7af256ee004c
 - https://en.wikipedia.org/wiki/Amazon_Web_Services
+- https://quintagroup.com/cms/technology/docker-compose
