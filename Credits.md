@@ -19,7 +19,7 @@
 
 - https://towardsdatascience.com/understanding-and-coding-a-resnet-in-keras-446d7ff84d33#:~:text=ResNet%2C%20short%20for%20Residual%20Networks,of%20ImageNet%20challenge%20in%202015.
 
-## Image Assets for iOS app
+## Image Assets
 
 - https://unsplash.com/photos/hX_hf2lPpUU
 - https://unsplash.com/photos/WS5yjFjycNY
@@ -45,3 +45,7 @@
 - https://aimconsulting.com/insights/modular-programming-android-using-swift/
 - https://hexus.net/tech/news/graphics/122288-asus-geforce-rtx-2070-graphics-card-lineup-exposed/
 - https://logos-world.net/ubuntu-logo/
+- https://towardsdatascience.com/the-what-and-why-of-docker-cdc8d99cbb3
+- https://www.google.com/url?sa=i&url=https%3A%2F%2Fmedium.com%2Ftechtofreedom%2Fbackend-architecture-of-a-python-web-application-7af256ee004c&psig=AOvVaw0OymzRnJvGWbwce3AQzOYO&ust=1614554673469000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOit9qqdi-8CFQAAAAAdAAAAABAD
+- https://medium.com/techtofreedom/backend-architecture-of-a-python-web-application-7af256ee004c
+- https://en.wikipedia.org/wiki/Amazon_Web_Services

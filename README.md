@@ -77,15 +77,15 @@ My final models each achieved a validation `accuracy of >= 99.2%`.
 - Something else I might have done differently was build my app in React Native or Flutter as it would have allowed me to bundle my iOS and Android app together which would be easier to do as the only developer.
 - Finally, I would like to implement and experiment with more state-of-the art models including XResNet and its variants for transfer learning on different datasets.
 
+## Final Words
+
+I hope my experiences building this app can shed some light into someone who is looking to get started on a similar ML project.
+
 ## Get my app
 
 - [iOS](https://apps.apple.com/us/app/plantifydr/id1530756725) - new version released
 - [Android](https://play.google.com/store/apps/details?id=com.onrender.plantify) - working on update
 - [Website](https://plantify.onrender.com/) - working on update
-
-## Final Words
-
-I hope my experiences building this app can shed some light into someone who is looking to get started on a similar ML project.
 
 ## Authors
 
