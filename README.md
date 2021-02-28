@@ -43,7 +43,7 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 
 - Finally, skip connections helps mitigate vanishing gradient and model performance will perform at least as good as previous layer.
 
-  <img src="images/SkipConnection.png" width="750>
+  <img src="images/SkipConnection.png" width="750">
 
 ## Deep Learning techniques used
 
