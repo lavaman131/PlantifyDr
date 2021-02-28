@@ -51,7 +51,7 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 
 2. **Fine tuning model** with `freeze` for `freeze_epochs` (transfer learning) then with `unfreeze` from epochs using `discriminative LR` (lower LR for earlier layers and greater LR for later layers)
 
-<img src="images/CosineAnnealing.png" width="500">
+<img src="images/CosineAnnealing.png" width="400">
 
 ## Results
 
