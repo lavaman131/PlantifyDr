@@ -22,6 +22,7 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
 - [WSGI](https://wsgi.readthedocs.io/en/latest/what.html) - Web Server Gateway Interface to communicate with web application
 - [AWS](https://aws.amazon.com/) - For hosting ML models
 - [Swift](https://developer.apple.com/swift/) - For creating iOS app
+- [Postman](https://www.postman.com/) - For testing API
 
   <img src="images/Resources.png">
   <p></p>
@@ -29,6 +30,7 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
   <img src="images/Docker_Compose.jpg" width="400">
   <img src="images/WSGI.png" width="500">
   <img src="images/AWS.png" width="300">
+  <img src="images/Postman.png" width="300">
 
 ## Project Plan
 
