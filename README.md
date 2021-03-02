@@ -28,7 +28,7 @@ A mobile application utilizing 2D Convolutional Neural Networks (CNNs) to diagno
   <p></p>
   <img src="images/Docker.png" width="400">
   <img src="images/Docker_Compose.jpg" width="400">
-  <img src="images/WSGI.png" width="500">
+  <img src="images/WSGI.png" width="1000">
   <img src="images/AWS.png" width="300">
   <img src="images/Postman.png" width="300">
 
