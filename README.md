@@ -99,6 +99,6 @@ I hope my experiences building this app can shed some light into someone who is 
 
 This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
-## Acknowledgments
+## Works Cited
 
-See the [Credits.md](Credits.md) file for details
+See the [Works_Cited.md](Works_Cited.md) file for details
