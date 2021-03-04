@@ -74,6 +74,16 @@ My final models each achieved a validation `accuracy of >= 99.2%`.
   - A `good fit` is identified by a training and validation loss that decreases to a point of stability with a minimal gap between the two final loss values.
 - Therefore, based on the previous statistics it can be inferred that the `validation accuracy` from my results is reliable to diagnose and treat plant diseases.
 
+## Experiment for yourself:
+
+In your terminal run:
+```
+pip install -r requirements.txt
+```
+
+Get the data from:
+https://www.kaggle.com/lavaman151/plantifydr-dataset 
+
 ## Points of Improvement:
 
 - In the future, I would like to add more plant types and diseases to my dataset.
