@@ -5,4 +5,5 @@ services:
     ports:
       - "5000:5000"
     volumes:
-      - "/home/alilavaee/Desktop/PlantifyDr/plantifydr:/app"
+      - "/home/ubuntu/PlantifyDr/plantifydr:/app"
+    restart: always
