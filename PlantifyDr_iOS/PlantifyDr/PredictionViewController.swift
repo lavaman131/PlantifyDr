@@ -110,7 +110,7 @@ class PredictionViewController: UIViewController, UIImagePickerControllerDelegat
         body += "--\(boundary)--\r\n";
         let postData = body.data(using: .utf8)
 
-        var request = URLRequest(url: URL(string: "http://ec2-3-14-80-120.us-east-2.compute.amazonaws.com:5000/classify")!,timeoutInterval: Double.infinity)
+        var request = URLRequest(url: URL(string: "APP URL GOES HERE")!,timeoutInterval: Double.infinity)
         request.addValue("multipart/form-data; boundary=\(boundary)", forHTTPHeaderField: "Content-Type")
 
         request.httpMethod = "POST"
