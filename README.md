@@ -92,9 +92,9 @@ I hope my experiences building this app can shed some light into someone who is 
 
 ## Get my app
 
-- [iOS](https://apps.apple.com/us/app/plantifydr/id1530756725) - new version released
-- [Android](https://play.google.com/store/apps/details?id=com.onrender.plantify) - working on update
-- [Website](https://plantify.onrender.com/) - working on update
+- [iOS](https://apps.apple.com/us/app/plantifydr/id1530756725) 
+- [Android](https://play.google.com/store/apps/details?id=com.onrender.plantify) - work in progress
+- [Website](https://plantify.onrender.com/) - work in progress
 
 ## Authors
 
